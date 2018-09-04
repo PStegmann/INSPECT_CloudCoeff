@@ -171,10 +171,10 @@ PROGRAM inspectTauCoeff
 
 
     ! Replace the default CloudCoeff SNOW MW properties with the ICE MW properties:
-    CloudC%w_S_MW(:,:,3)            = CloudC%
-    CloudC%ke_S_MW(:,:,3)           = CloudC%
-    CloudC%g_S_MW(:,:,3)            = CloudC%
-    CloudC%pcoeff_S_MW(:,:3,0:37,1) = CloudC%
+    !CloudC%w_S_MW(:,:,3)            = CloudC%
+    !CloudC%ke_S_MW(:,:,3)           = CloudC%
+    !CloudC%g_S_MW(:,:,3)            = CloudC%
+    !CloudC%pcoeff_S_MW(:,:3,0:37,1) = CloudC%
 
     ! Output CloudCoeff data to prompt
     DO ii = 1,31
