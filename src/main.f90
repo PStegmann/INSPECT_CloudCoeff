@@ -79,7 +79,7 @@ PROGRAM inspectTauCoeff
 
     ! Local variables
     CHARACTER(ML)   :: msg, pid_msg
-    CHARACTER(SL)   :: Default_CloudCoeff_File, CloudCoeff_File, new_CloudCoeff_File, CloudCoeff_File_ybq
+    CHARACTER(SL)   :: Default_CloudCoeff_File, CloudCoeff_File
     CHARACTER(SL)   :: Filename
     CHARACTER(SL)   :: File_Path
 
@@ -97,8 +97,8 @@ PROGRAM inspectTauCoeff
     INTEGER :: I, J, K, ii
 
 
-    real,dimension(31,10) :: w_S_MW_ybq, g_S_MW_ybq, ke_S_MW_ybq
-    real,dimension(31,10,38) :: pcoeff_S_MW_ybq
+    real,dimension(31,10) :: w_S_MW, g_S_MW, ke_S_MW
+    real,dimension(31,10,38) :: pcoeff_S_MW
     character(ML) :: strde, strfre
     integer, dimension(10) :: r
 
@@ -111,24 +111,18 @@ PROGRAM inspectTauCoeff
   ! ---------------------------------
   TYPE(CloudCoeff_type), TARGET, SAVE :: CloudC
 
-
-
     ! Set up
     err_stat = SUCCESS
 
     Default_CloudCoeff_File    = 'CloudCoeff_orig.bin'
-    !Default_CloudCoeff_File    = 'CloudCoeff_pst_270K_le_test.bin'
-    !Default_CloudCoeff_File     = 'CloudCoeff_out.bin'
 
-    !new_CloudCoeff_File   = 'CloudCoeff_ybq_test.bin'
 
     Filename  = Default_CloudCoeff_File
-    File_Path  = './'
+    File_Path  = '../fix/'
 
     ! ...Add the file path
     CloudCoeff_File = TRIM(ADJUSTL(File_Path))//TRIM(Filename)
     
-    CloudCoeff_File_ybq = TRIM(ADJUSTL(File_Path))//TRIM(new_CloudCoeff_File)
    
     ! Inquire the content of the CloudCoeff data file
     err_stat = CloudCoeff_Binary_InquireFile(&
@@ -144,7 +138,7 @@ PROGRAM inspectTauCoeff
                  Release          = Release         , &
                  Version          = Version           )
 
-    print *, n_MW_Frequencies, &
+    WRITE(*,*) n_MW_Frequencies, &
                  n_MW_Radii      , &
                  n_IR_Frequencies, &
                  n_IR_Radii      , &
@@ -166,7 +160,6 @@ PROGRAM inspectTauCoeff
       CALL Display_Message( ROUTINE_NAME,TRIM(msg)//TRIM(pid_msg),err_stat )
     ELSE
       WRITE( msg,'("Success reading CloudCoeff file ",a)') TRIM(CloudCoeff_File)
-      ! CALL Display_Message( ROUTINE_NAME,TRIM(msg)//TRIM(pid_msg),err_stat )
     END IF
 
 

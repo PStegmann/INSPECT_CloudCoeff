@@ -8,6 +8,7 @@ in the CRTM can be retrieved in the IR and MW:
 - `snow`
 - `graupel`
 - `hail`
+
 Numerical values are saved in ASCII format and python scripts
 are provided to reconstruct the phase function from the 
 retrieved Legendre exoansion coefficients.. 
