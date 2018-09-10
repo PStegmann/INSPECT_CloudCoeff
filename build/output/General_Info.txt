@@ -1,0 +1,10 @@
+ n_MW_Frequencies =           31 
+n_MW_Radii =           10 
+n_IR_Frequencies =           61 
+n_IR_Radii =           10 
+n_Temperatures =            5 
+n_Densities =            3 
+n_Legendre_Terms =           38 
+n_Phase_Elements =            1 
+Release:            3 
+Version:            4

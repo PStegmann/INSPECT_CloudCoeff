@@ -1,0 +1,11 @@
+ CRTM MW scattering property particle effective radii in units of [micrometer].
+ MW Radius:    5.0000000000000000     
+ MW Radius:    15.000000000000000     
+ MW Radius:    30.000000000000000     
+ MW Radius:    50.000000000000000     
+ MW Radius:    100.00000000000000     
+ MW Radius:    300.00000000000000     
+ MW Radius:    500.00000000000000     
+ MW Radius:    800.00000000000000     
+ MW Radius:    1000.0000000000000     
+ MW Radius:    1500.0000000000000     

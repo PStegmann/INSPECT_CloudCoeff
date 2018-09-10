@@ -1,0 +1,6 @@
+ CRTM liquid water particle temperatures in units of [Kelvin].
+ Temperature:    263.16000000000003     
+ Temperature:    273.16000000000003     
+ Temperature:    282.00000000000000     
+ Temperature:    290.00000000000000     
+ Temperature:    300.00000000000000     
