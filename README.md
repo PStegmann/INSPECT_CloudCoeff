@@ -39,4 +39,4 @@ To reconstruct either the MW or IR phase functions, execute either one of the `p
 Please see the file `LICENSE.txt` for details.
 
 # References
-Stegmann, P. G., G. Tang, P. Yang, B. T. Stegmann (2018): "A stochastic model for density-dependent microwave Snow- and Graupel scattering coefficients of the NOAA JCSDA community radiative transfer model.", J. Quant. Spec. Rad. Trans. 211, 9-24.
+Stegmann, P. G., G. Tang, P. Yang, B. T. Johnson (2018): "A stochastic model for density-dependent microwave Snow- and Graupel scattering coefficients of the NOAA JCSDA community radiative transfer model.", J. Quant. Spec. Rad. Trans. 211, 9-24.

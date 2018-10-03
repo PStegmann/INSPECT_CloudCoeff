@@ -1,3 +1,4 @@
+# coding: utf8
 """
     file: plot_legendre_MW.py
     
